@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<script src="./bundle.js" defer></script>
+
+<title>Shop</title>
+
+</head>
+<body>
+    <!-- Log in form -->
+    <form>
+        <h2>Login to Shop</h2>
+        <p>Username</p>
+        <input type="text" name="username" id="username-input">
+        <p>Pasword</p>
+        <input type="text" name="username" id="password-input">
+        <br>
+        <button id="login-btn">Submit</button>
+    </form>
+
+    <div id="shop-info">
+        <form>
+            <h2>Add Product to shop</h2>
+            <p>Product Name</p>
+            <input type="text" name="item-name" id="product-name">
+            <br>
+            <p>Product Price</p>
+            <input type="text" name="item-price" id="product-price">
+            <br>
+            <p>Product Description</p>
+            <input type="text" name="item-description" id="product-description">
+            <br>
+            <button id="add-item-btn" onclick="addProduct()">Submit</button>
+        </form>
+
+        <h4>Shop Items:</h4>
+        <p id="product-list"></p>     
+    </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

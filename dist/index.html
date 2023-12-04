@@ -7,7 +7,7 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+<link rel="stylesheet" href="./css/main.css">
 <script src="./bundle.js" defer></script>
 
 <title>Shop</title>
@@ -16,17 +16,17 @@
 <body>
     <!-- Log in form -->
     <form>
-        <h2>Login to Shop</h2>
+        <h2>Log in to Shop</h2>
         <p>Username</p>
         <input type="text" name="username" id="username-input">
-        <p>Pasword</p>
-        <input type="text" name="username" id="password-input">
+        <p>Age</p>
+        <input type="text" name="age" id="age-input">
         <br>
-        <button id="login-btn">Submit</button>
+        <button id="login-btn">Log In/Sign Up</button>
     </form>
 
     <div id="shop-info">
-        <form>
+        <form hidden>
             <h2>Add Product to shop</h2>
             <p>Product Name</p>
             <input type="text" name="item-name" id="product-name">
@@ -40,8 +40,20 @@
             <button id="add-item-btn" onclick="addProduct()">Submit</button>
         </form>
 
-        <h4>Shop Items:</h4>
-        <p id="product-list"></p>     
+        <h1 id="welcome-header">Welcome </h1>
+        <div class="main-area">
+            <div class="store">
+                <h4>Shop Items:</h4>
+                <div id="product-list"></div> 
+            </div>
+
+            <div class="cart">
+                <h4>Cart</h4>
+                <div id="cart-list"></div> 
+            </div>
+        </div>
+       
+    
     </div>
 
 </body>

@@ -1,0 +1,14 @@
+.main-area{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.main-area>div{
+    border: 3px solid black;
+    padding: 30px;
+}
+
+.cart{
+    min-width: 400px;
+}
